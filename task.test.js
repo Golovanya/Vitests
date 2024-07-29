@@ -4,8 +4,14 @@ import { TEST_CASES } from "./TestCases";
 
 
 
-describe.each(TEST_CASES)('Form output check', ({description,formData,expected}) => {
+describe.each(TEST_CASES)('Fixed function  output check', ({description,formData,expected}) => {
+  test(`${description}`, () => {
+    expect(fixedFunction(formData)).toEqual(expected)
+  })
+})
+
+describe.each(TEST_CASES)('First function output check', ({description,formData,expected}) => {
     test(`${description}`, () => {
-      expect(fixedFunction(formData)).toEqual(expected)
+      expect(formFormToServer(formData)).toEqual(expected)
     })
   })
