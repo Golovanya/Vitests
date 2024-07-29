@@ -1,0 +1,18 @@
+{
+  "name": "vkvitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest --ui"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^2.0.4"
+  },
+  "dependencies": {
+    "@vitest/ui": "^2.0.4"
+  }
+}
